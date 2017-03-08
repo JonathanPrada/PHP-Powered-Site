@@ -45,7 +45,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //This fills in the email content
     $mail->setFrom($email, $name); //from person who sent
-    $mail->addAddress('j.prada@hotmail.co.uk', 'John'); // Add a recipient
+    $mail->addAddress('email@here.com', 'John'); // Add a recipient
     $mail->isHTML(false); // Set email format to HTML, if false text
 
     $mail->Subject = 'Personal Media Library Suggestion from' . $name;
